@@ -3,305 +3,285 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snehal Bole — Cold Outreach Playbook</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<title>Snehal Bole , Outreach Playbook</title>
 <style>
-:root{
-  --ink:#0B0F1A; --ink2:#1E2535; --blue:#1A4FD6; --blue-mid:#2563EB; --blue-light:#3B82F6;
-  --blue-pale:#EFF6FF; --blue-pale2:#DBEAFE; --slate:#64748B; --slate-light:#94A3B8;
-  --rule:#E2E8F0; --bg:#F8FAFD; --white:#FFFFFF;
-  --red-bg:#FEF2F2; --red:#991B1B; --red-mid:#DC2626;
-  --green-bg:#F0FDF4; --green:#166534; --green-mid:#16A34A;
-  --amber-bg:#FFFBEB; --amber:#92400E; --amber-mid:#D97706;
-  --serif:'DM Serif Display',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:14px;line-height:1.6;}
-.container{max-width:900px;margin:0 auto;padding:0 32px 80px;}
-.cover{background:var(--ink);color:white;padding:72px 64px 56px;position:relative;overflow:hidden;min-height:320px;}
-.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(37,99,235,0.25) 0%,transparent 65%),radial-gradient(ellipse at 20% 80%,rgba(26,79,214,0.15) 0%,transparent 50%);pointer-events:none;}
-.cover-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;position:relative;z-index:1;}
-.cover-kicker{font-size:10px;font-weight:600;letter-spacing:0.18em;color:var(--blue-light);text-transform:uppercase;margin-bottom:16px;}
-.cover-name{font-family:var(--serif);font-size:48px;line-height:1.08;color:white;margin-bottom:8px;}
-.cover-name em{color:var(--blue-light);font-style:italic;}
-.cover-tagline{font-size:14px;color:rgba(255,255,255,0.55);font-weight:300;margin-bottom:36px;max-width:520px;line-height:1.7;}
-.cover-chips{display:flex;flex-wrap:wrap;gap:8px;}
-.chip{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.8);padding:5px 14px;border-radius:100px;font-size:11.5px;font-weight:500;}
-.chip.primary{background:var(--blue-mid);border-color:var(--blue-mid);color:white;}
-.cover-meta{text-align:right;font-size:11px;color:rgba(255,255,255,0.35);line-height:2;white-space:nowrap;}
-.cover-score{display:inline-block;background:var(--blue-mid);color:white;font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;margin-bottom:8px;}
-.cover-bar{height:4px;background:linear-gradient(90deg,var(--blue-mid),var(--blue-light));margin-top:36px;position:relative;z-index:1;border-radius:2px;opacity:0.6;}
-.sec-label{display:flex;align-items:center;gap:10px;margin:48px 0 20px;}
-.sec-num{width:26px;height:26px;background:var(--blue);color:white;font-size:10px;font-weight:700;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.sec-title{font-size:10.5px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--blue);}
-.rule{height:1px;background:var(--rule);flex:1;}
-.sec-heading{font-family:var(--serif);font-size:28px;color:var(--ink);margin-bottom:8px;line-height:1.2;}
-.sec-sub{font-size:13px;color:var(--slate);margin-bottom:24px;line-height:1.6;}
-.score-row{display:flex;align-items:center;gap:12px;margin:8px 0;}
-.score-label{font-size:13px;color:var(--ink2);flex:1;}
-.score-badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;}
-.score-bad{background:var(--red-bg);color:var(--red);}
-.score-mid{background:var(--amber-bg);color:var(--amber);}
-.score-good{background:var(--green-bg);color:var(--green);}
-.score-bar-wrap{width:120px;height:5px;background:var(--rule);border-radius:3px;}
-.score-bar{height:100%;border-radius:3px;}
-.card{background:white;border:1px solid var(--rule);border-radius:12px;padding:24px 28px;margin-bottom:16px;}
-.card-sm{background:white;border:1px solid var(--rule);border-radius:10px;padding:18px 22px;margin-bottom:12px;}
-.card-accent{border-left:3px solid var(--blue);padding-left:25px;}
-.card-green{border-left:3px solid var(--green-mid);}
-.card-amber{border-left:3px solid var(--amber-mid);}
-.card-red{border-left:3px solid var(--red-mid);}
-.callout{background:var(--blue-pale);border:1px solid var(--blue-pale2);border-radius:10px;padding:18px 22px;margin:16px 0;font-size:13.5px;line-height:1.7;color:var(--ink2);}
-.callout.green{background:var(--green-bg);border-color:#BBF7D0;}
-.callout.amber{background:var(--amber-bg);border-color:#FDE68A;}
-.callout.dark{background:var(--ink);border-color:transparent;color:rgba(255,255,255,0.85);}
-.callout-label{font-size:9.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:8px;color:var(--blue);}
-.callout.green .callout-label{color:var(--green-mid);}
-.callout.amber .callout-label{color:var(--amber-mid);}
-.callout.dark .callout-label{color:var(--blue-light);}
-.copy-block{background:var(--ink);color:rgba(255,255,255,0.88);border-radius:10px;padding:22px 26px;font-size:13.5px;line-height:1.75;margin:12px 0;position:relative;}
-.copy-block-label{position:absolute;top:-1px;right:16px;background:var(--blue-mid);color:white;font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:0 0 6px 6px;}
-.copy-block p{margin-bottom:12px;}
-.copy-block p:last-child{margin-bottom:0;}
-.copy-block strong{color:white;font-weight:600;}
-.copy-block em{color:var(--blue-light);font-style:normal;}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
-.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
-.skills-grid{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
-.skill-tag{background:var(--blue-pale);color:var(--blue);border:1px solid var(--blue-pale2);padding:5px 13px;border-radius:100px;font-size:12px;font-weight:500;}
-.skill-tag.top5{background:var(--blue);color:white;border-color:var(--blue);}
-.company-card{background:white;border:1px solid var(--rule);border-radius:10px;padding:18px 22px;margin-bottom:12px;}
-.company-name{font-weight:700;font-size:15px;color:var(--ink);margin-bottom:4px;}
-.company-type{font-size:10.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
-.company-roles{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px;}
-.role-tag{background:var(--ink);color:white;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:500;}
-.company-why{font-size:12.5px;color:var(--slate);line-height:1.6;border-top:1px solid var(--rule);padding-top:10px;margin-top:10px;}
-.checklist{list-style:none;}
-.checklist li{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.55;}
-.checklist li:last-child{border-bottom:none;}
-.check-box{width:18px;height:18px;border:2px solid var(--rule);border-radius:4px;flex-shrink:0;margin-top:2px;}
-.field-label{font-size:9.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--slate-light);margin-bottom:4px;}
-.field-value{font-size:14px;font-weight:600;color:var(--ink);line-height:1.4;}
-.field-sub{font-size:12px;color:var(--slate);margin-top:2px;}
-.search-str{background:#0B0F1A;color:#93C5FD;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;padding:10px 14px;border-radius:8px;margin:8px 0;word-break:break-word;line-height:1.5;}
-.footer{background:var(--ink);color:rgba(255,255,255,0.4);text-align:center;padding:24px;font-size:11px;letter-spacing:0.08em;}
-h4.mini{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;}
-.stat-row{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;}
-.stat-num{font-family:var(--serif);font-size:32px;color:var(--blue);line-height:1;}
-.stat-label{font-size:12px;color:var(--slate);}
-@media(max-width:640px){
-  .cover{padding:40px 24px;}
-  .cover-name{font-size:34px;}
-  .two-col,.three-col,.cover-grid{grid-template-columns:1fr;}
-  .container{padding:0 16px 60px;}
-  .cover-meta{text-align:left;}
+:root{
+  --bg:#090B0F;--bg2:#0F1218;--bg3:#151820;--surface:#1A1D26;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.04);
+  --violet:#7C6FE8;--violet-soft:rgba(124,111,232,0.12);--violet-mid:rgba(124,111,232,0.25);
+  --cream:#EDE9E3;--cream2:rgba(237,233,227,0.65);--cream3:rgba(237,233,227,0.35);--cream4:rgba(237,233,227,0.1);
+  --teal:#3DB89A;--teal-soft:rgba(61,184,154,0.1);--amber:#D4973F;--red:#E05252;
+  --green:#4ADE80;--green-soft:rgba(74,222,128,0.08);
+  --serif:'Instrument Serif',Georgia,serif;--sans:'Syne',system-ui,sans-serif;--mono:'DM Mono',monospace;
 }
+html,body{height:100%;overflow:hidden;}
+body{display:flex;flex-direction:column;background:var(--bg);color:var(--cream);font-family:var(--sans);}
+/* TOPBAR */
+.topbar{flex-shrink:0;height:52px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 22px;border-bottom:1px solid var(--border);background:var(--bg2);}
+.brand{font-family:var(--serif);font-size:22px;}.brand .dot{color:var(--violet);}
+.who{text-align:center;}.who .nm{font-weight:600;font-size:14px;}
+.who .rl{font-family:var(--mono);font-size:9.5px;color:var(--cream3);letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+.status{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9px;color:var(--teal);letter-spacing:1px;text-transform:uppercase;}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--teal);position:relative;}
+.pulse::after{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--teal);opacity:.4;animation:pulse 1.8s ease-out infinite;}
+@keyframes pulse{0%{transform:scale(.6);opacity:.5}100%{transform:scale(2.2);opacity:0}}
+/* TABS */
+.tabs{flex-shrink:0;height:44px;display:flex;border-bottom:1px solid var(--border);background:var(--bg);padding:0 14px;}
+.tab{display:flex;align-items:center;gap:7px;padding:0 18px;height:100%;cursor:pointer;
+  font-family:var(--mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--cream3);
+  border-bottom:2px solid transparent;transition:all .15s;}
+.tab:hover{color:var(--cream2);}.tab.active{color:var(--violet);border-bottom-color:var(--violet);}
+.badge{min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--cream4);color:var(--cream2);font-size:8.5px;display:flex;align-items:center;justify-content:center;}
+.tab.active .badge{background:var(--violet-soft);color:var(--violet);}
+/* MAIN */
+.main{flex:1;min-height:0;display:flex;overflow:hidden;}
+.panel{display:none;flex:1;min-height:0;overflow:hidden;}.panel.active{display:flex;}
+/* COMPANIES */
+.sidebar{width:238px;flex-shrink:0;border-right:1px solid var(--border);overflow-y:auto;background:var(--bg2);padding:12px 0;}
+.sb-lbl{font-family:var(--mono);font-size:7px;letter-spacing:2px;text-transform:uppercase;color:var(--cream3);padding:14px 16px 6px;}
+.sidebar-featured{margin:0 10px 8px;padding:12px;background:var(--violet-soft);border-left:3px solid var(--violet);border-radius:0 5px 5px 0;cursor:pointer;transition:background .15s;}
+.sidebar-featured:hover{background:rgba(124,111,232,0.16);}.sidebar-featured.active{background:rgba(124,111,232,0.22);}
+.sf-eb{font-family:var(--mono);font-size:7.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--violet);margin-bottom:5px;}
+.sf-name{font-size:13px;font-weight:700;color:var(--cream);}.sf-sub{font-size:10.5px;color:var(--cream3);margin-top:3px;line-height:1.4;}
+.sidebar-item{display:flex;gap:10px;align-items:center;padding:10px 16px;cursor:pointer;border-left:3px solid transparent;transition:background .12s;}
+.sidebar-item:hover{background:rgba(255,255,255,0.02);}.sidebar-item.active{background:rgba(255,255,255,0.03);}
+.sidebar-item.active .sb-idx.t1{color:var(--violet);}.sidebar-item.active .sb-idx.t2{color:var(--teal);}
+.sidebar-item.active{border-left-color:var(--violet);}
+.sb-idx{font-family:var(--mono);font-size:9px;color:var(--cream3);width:16px;flex-shrink:0;}
+.sb-meta{display:flex;flex-direction:column;}.sb-name{font-size:12px;font-weight:600;color:var(--cream);}
+.sb-sec{font-size:9.5px;color:var(--cream3);margin-top:1px;}
+.co-detail{flex:1;overflow-y:auto;padding:40px 48px 60px;}
+.co-detail-view{display:none;}.co-detail-view.active{display:block;}
+.eb{font-family:var(--mono);font-size:8px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;}
+.eb-featured,.eb-t1{color:var(--violet);}.eb-t2{color:var(--teal);}
+.co-name{font-family:var(--serif);font-size:48px;line-height:1.0;}
+.co-sector{font-family:var(--mono);font-size:9px;color:var(--cream3);letter-spacing:1px;text-transform:uppercase;padding-bottom:18px;border-bottom:1px solid var(--border);margin:10px 0 28px;}
+.numrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;}
+.pill{font-family:var(--mono);font-size:9.5px;color:var(--cream2);background:var(--bg3);border:1px solid var(--border);padding:6px 12px;border-radius:20px;letter-spacing:.5px;}
+.co-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;margin-bottom:30px;}
+.col-lbl{font-family:var(--mono);font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:var(--cream3);margin-bottom:12px;}
+.jt{color:var(--teal);font-size:12.5px;padding:5px 0;}
+.tmpl-letter{font-family:var(--serif);font-size:52px;color:var(--cream4);line-height:.9;}
+.tmpl-name{font-family:var(--mono);font-size:10px;color:var(--cream2);letter-spacing:1px;margin-top:2px;}
+.note-card{background:var(--bg2);border:1px solid var(--border);border-top:3px solid var(--violet);border-radius:2px;padding:22px 26px;}
+.note-lbl{font-family:var(--mono);font-size:7.5px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;}
+.note-body{font-family:var(--serif);font-size:17px;font-weight:300;font-style:italic;color:var(--cream);line-height:1.65;}
+/* SCRIPTS */
+#panel-scripts{flex-direction:column;overflow:hidden;}
+.sc-head{flex-shrink:0;padding:26px 40px 0;}
+.sc-title{font-family:var(--serif);font-size:26px;}.sc-title em{font-style:italic;}
+.sc-sub{font-size:11px;color:var(--cream3);margin-top:4px;}
+.tmpl-choices{display:flex;margin-top:20px;}
+.tmpl-choice{flex:1;border:1px solid var(--border);border-bottom:none;border-radius:6px 6px 0 0;padding:14px 16px;cursor:pointer;display:flex;flex-direction:column;gap:2px;transition:all .15s;}
+.tmpl-choice+.tmpl-choice{border-left:none;}.tmpl-choice:hover{background:rgba(255,255,255,0.02);}
+.tmpl-choice.active{background:var(--violet-soft);border-color:var(--violet);}
+.tc-letter{font-family:var(--serif);font-size:22px;font-weight:300;color:var(--cream4);}
+.tmpl-choice.active .tc-letter{color:var(--violet);}
+.tc-name{font-family:var(--mono);font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--cream2);}
+.tc-who{font-size:8px;color:var(--cream3);}
+.sc-body{flex:1;min-height:0;overflow-y:auto;padding:0 40px 40px;}
+.cn-strip{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--violet);border-radius:0 4px 4px 0;padding:14px 18px;margin:18px 0 22px;display:flex;align-items:center;gap:16px;}
+.cn-meta{flex-shrink:0;}.cn-lbl{font-family:var(--mono);font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:var(--violet);}
+.cn-char{font-family:var(--mono);font-size:9px;color:var(--cream3);margin-top:3px;}
+.cn-text{flex:1;font-size:12px;color:var(--cream2);line-height:1.55;}
+.tmpl-panel{display:none;border:1px solid var(--border);border-radius:6px;overflow:hidden;}
+.tmpl-panel.active{display:block;}
+.tp-head{background:var(--bg3);padding:12px 18px;font-family:var(--mono);font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--cream2);border-bottom:1px solid var(--border);}
+.tp-body{padding:22px 24px;font-size:13.5px;color:var(--cream);line-height:1.85;white-space:pre-wrap;}
+.tp-foot{border-top:1px solid var(--border);padding:12px 18px;display:flex;align-items:center;justify-content:space-between;}
+.wc{font-family:var(--mono);font-size:9px;color:var(--cream3);letter-spacing:1px;}
+/* REPLIES */
+#panel-replies{flex-direction:column;overflow:hidden;}
+.rp-scroll{flex:1;min-height:0;overflow-y:auto;padding:28px 40px 48px;}
+.rp-title{font-family:var(--serif);font-size:26px;margin-bottom:4px;}.rp-title em{font-style:italic;}
+.rp-sub{font-size:11px;color:var(--cream3);margin-bottom:20px;}
+.reply-card{flex-shrink:0;border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-top:14px;}
+.reply-card:first-of-type{margin-top:0;}
+.rc-head{background:var(--bg3);padding:13px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.rc-n{font-family:var(--mono);font-size:11px;color:var(--violet);letter-spacing:1px;}
+.rc-sit{font-size:13px;font-weight:600;color:var(--cream);}
+.rc-body{padding:16px 20px;font-size:13px;color:var(--cream2);line-height:1.85;white-space:pre-wrap;}
+.rc-foot{border-top:1px solid var(--border);padding:11px 18px;display:flex;justify-content:flex-end;}
+/* WARM UP */
+#panel-warmup{overflow-y:auto;}
+.wu-inner{flex:1;min-height:0;overflow-y:auto;padding:28px 40px 48px;width:100%;}
+.wu-title{font-family:var(--serif);font-size:26px;margin-bottom:4px;}.wu-title em{font-style:italic;}
+.wu-sub{font-size:11px;color:var(--cream3);margin-bottom:22px;}
+.wu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.wu-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:20px 22px;}
+.wu-card h3{font-size:13px;font-weight:600;margin-bottom:14px;}
+.ci{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--cream2);line-height:1.5;padding:5px 0;}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--violet);flex-shrink:0;margin-top:6px;}
+.kw-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);}
+.kw-row:last-child{border-bottom:none;}
+.kw-row code{font-family:var(--mono);font-size:11px;color:var(--teal);}
+.kw-copy{font-family:var(--mono);font-size:8px;letter-spacing:1px;text-transform:uppercase;color:var(--cream3);background:none;border:1px solid var(--border);padding:4px 10px;border-radius:3px;cursor:pointer;}
+.kw-copy:hover{color:var(--violet);border-color:var(--violet-mid);}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.cmp-col{padding:12px 14px;border-radius:5px;font-size:11.5px;line-height:1.6;}
+.cmp-good{background:var(--green-soft);border-left:3px solid var(--green);color:var(--cream2);}
+.cmp-bad{background:rgba(224,82,82,0.06);border-left:3px solid var(--red);color:var(--cream3);}
+.cmp-lbl{font-family:var(--mono);font-size:7.5px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:7px;display:block;}
+.cmp-good .cmp-lbl{color:var(--green);}.cmp-bad .cmp-lbl{color:var(--red);}
+.ai-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+.ai-prompt{background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:16px 18px;font-family:var(--mono);font-size:11px;color:var(--cream2);line-height:1.7;white-space:pre-wrap;}
+.copy-btn{font-family:var(--mono);font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;background:var(--violet-soft);color:var(--violet);border:1px solid var(--violet-mid);padding:7px 16px;border-radius:3px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.copy-btn:hover{background:var(--violet);color:#fff;border-color:var(--violet);}
+.copy-btn.copied{background:var(--green-soft);color:var(--green);border-color:rgba(74,222,128,0.25);}
+.span2{grid-column:1 / -1;}
 </style>
 </head>
 <body>
 
-<div class="cover">
-  <div class="cover-grid">
-    <div>
-      <div class="cover-kicker">Ark Abroad · Cold Outreach Playbook · 2026</div>
-      <h1 class="cover-name">Snehal <em>Bole</em></h1>
-      <p class="cover-tagline">SOC Analyst · Vulnerability Assessment · Sydney, NSW<br>Exact emails, LinkedIn messages and target contacts to get in front of hiring managers directly — before the job even hits SEEK.</p>
-      <div class="cover-chips">
-        <span class="chip primary">SOC Analyst</span>
-        <span class="chip primary">Cybersecurity Analyst</span>
-        <span class="chip">CEH Certified</span>
-        <span class="chip">Partner Visa · Full Work Rights</span>
-        <span class="chip">7–10 hrs/week execution</span>
+<div class="topbar">
+  <div class="brand">Ark<span class="dot">.</span></div>
+  <div class="who">
+    <div class="nm">Snehal Bole</div>
+    <div class="rl">SOC Analyst · CEH Certified · Sydney</div>
+  </div>
+  <div class="status"><span class="pulse"></span>Partner Visa · Full Work Rights · Available Now</div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('companies',this)">Companies <span class="badge">16</span></div>
+  <div class="tab" onclick="switchTab('scripts',this)">Scripts <span class="badge">3</span></div>
+  <div class="tab" onclick="switchTab('replies',this)">Replies <span class="badge">3</span></div>
+  <div class="tab" onclick="switchTab('warmup',this)">Warm Up <span class="badge">4</span></div>
+</div>
+
+<div class="main">
+
+  <!-- COMPANIES -->
+  <div class="panel active" id="panel-companies">
+    <div class="sidebar">
+      <div class="sb-lbl">Priority First</div>
+      <div class="sidebar-featured active" id="sb-cybercx" onclick="showCompany('cybercx')"><div class="sf-eb">Warm Contact · Priority 1</div><div class="sf-name">CyberCX</div><div class="sf-sub">Australia's largest end-to-end MSSP. Your strongest opening target.</div></div>
+      <div class="sb-lbl">Tier 1 · Priority Targets</div>
+      <div class="sidebar-item" id="sb-tesserent" onclick="showCompany('tesserent')"><span class="sb-idx t1">01</span><span class="sb-meta"><span class="sb-name">Tesserent (Thales)</span><span class="sb-sec">MSSP</span></span></div><div class="sidebar-item" id="sb-mactelco" onclick="showCompany('mactelco')"><span class="sb-idx t1">02</span><span class="sb-meta"><span class="sb-name">Macquarie Telecom Group</span><span class="sb-sec">MSSP</span></span></div><div class="sidebar-item" id="sb-cba" onclick="showCompany('cba')"><span class="sb-idx t1">03</span><span class="sb-meta"><span class="sb-name">Commonwealth Bank</span><span class="sb-sec">Banking</span></span></div><div class="sidebar-item" id="sb-westpac" onclick="showCompany('westpac')"><span class="sb-idx t1">04</span><span class="sb-meta"><span class="sb-name">Westpac</span><span class="sb-sec">Banking</span></span></div><div class="sidebar-item" id="sb-sekuro" onclick="showCompany('sekuro')"><span class="sb-idx t1">05</span><span class="sb-meta"><span class="sb-name">Sekuro</span><span class="sb-sec">Cyber and Digital Resilience</span></span></div><div class="sidebar-item" id="sb-telstrapurple" onclick="showCompany('telstrapurple')"><span class="sb-idx t1">06</span><span class="sb-meta"><span class="sb-name">Telstra Purple</span><span class="sb-sec">Enterprise Security Services</span></span></div><div class="sidebar-item" id="sb-datacom" onclick="showCompany('datacom')"><span class="sb-idx t1">07</span><span class="sb-meta"><span class="sb-name">Datacom</span><span class="sb-sec">IT Services</span></span></div><div class="sidebar-item" id="sb-nccgroup" onclick="showCompany('nccgroup')"><span class="sb-idx t1">08</span><span class="sb-meta"><span class="sb-name">NCC Group</span><span class="sb-sec">Global Cyber Security Firm</span></span></div>
+      <div class="sb-lbl">Tier 2 · Strong Targets</div>
+      <div class="sidebar-item" id="sb-deloitte" onclick="showCompany('deloitte')"><span class="sb-idx t2">01</span><span class="sb-meta"><span class="sb-name">Deloitte Cyber</span><span class="sb-sec">Big Four</span></span></div><div class="sidebar-item" id="sb-accenture" onclick="showCompany('accenture')"><span class="sb-idx t2">02</span><span class="sb-meta"><span class="sb-name">Accenture Security</span><span class="sb-sec">Consulting</span></span></div><div class="sidebar-item" id="sb-optus" onclick="showCompany('optus')"><span class="sb-idx t2">03</span><span class="sb-meta"><span class="sb-name">Optus</span><span class="sb-sec">Telco</span></span></div><div class="sidebar-item" id="sb-anz" onclick="showCompany('anz')"><span class="sb-idx t2">04</span><span class="sb-meta"><span class="sb-name">ANZ</span><span class="sb-sec">Banking</span></span></div><div class="sidebar-item" id="sb-baesystems" onclick="showCompany('baesystems')"><span class="sb-idx t2">05</span><span class="sb-meta"><span class="sb-name">BAE Systems Digital Intelligence</span><span class="sb-sec">Defence and Cyber</span></span></div><div class="sidebar-item" id="sb-kpmg" onclick="showCompany('kpmg')"><span class="sb-idx t2">06</span><span class="sb-meta"><span class="sb-name">KPMG Cyber</span><span class="sb-sec">Big Four</span></span></div><div class="sidebar-item" id="sb-nab" onclick="showCompany('nab')"><span class="sb-idx t2">07</span><span class="sb-meta"><span class="sb-name">NAB</span><span class="sb-sec">Banking</span></span></div><div class="sidebar-item" id="sb-infosys" onclick="showCompany('infosys')"><span class="sb-idx t2">08</span><span class="sb-meta"><span class="sb-name">Infosys Cybersecurity</span><span class="sb-sec">IT Services</span></span></div>
+    </div>
+    <div class="co-detail" id="co-detail"><div class="co-detail-view active" id="detail-cybercx"><div class="eb eb-featured">Warm Contact · Priority 1</div><h1 class="co-name">CyberCX</h1><div class="co-sector">MSSP · Managed Security Services · Sydney</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">CEH + Splunk + 4 certs</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">SOC Analyst</div><div class="jt">Security Analyst</div><div class="jt">Cyber Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with your live QRadar and Splunk SOC experience plus full work rights on a partner visa. They run large managed SOCs and hire analysts at entry to mid level continuously.</div></div></div><div class="co-detail-view" id="detail-tesserent"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Tesserent (Thales)</h1><div class="co-sector">MSSP · Cyber Security Services · Sydney</div><div class="numrow"><span class="pill">SOC + VAPT across 2 roles</span><span class="pill">CEH certified</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">SOC Analyst</div><div class="jt">VAPT Consultant</div><div class="jt">Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with your dual SOC and VAPT background. They run both defensive and offensive practices, exactly the combination that separates you from single-track candidates.</div></div></div><div class="co-detail-view" id="detail-mactelco"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Macquarie Telecom Group</h1><div class="co-sector">MSSP · Managed Security · Sydney HQ</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">Weekly VA on network infra</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">SOC Analyst</div><div class="jt">Security Analyst</div><div class="jt">Information Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with SIEM monitoring and your weekly vulnerability assessment cadence. Their growing managed SOC hires analysts with practical daily SOC experience, not just certifications.</div></div></div><div class="co-detail-view" id="detail-cba"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Commonwealth Bank</h1><div class="co-sector">Banking · In-house SOC · Sydney HQ</div><div class="numrow"><span class="pill">Partner visa, no sponsorship</span><span class="pill">CEH certified</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Security Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Security Operations Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with onshore availability and no sponsorship required. Major Australian banks run 24/7 SOCs on Splunk and Sentinel and actively prioritise candidates with full work rights.</div></div></div><div class="co-detail-view" id="detail-westpac"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Westpac</h1><div class="co-sector">Banking · Security Operations · Sydney HQ</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">Partner visa, no sponsorship</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Security Operations Analyst</div><div class="jt">Information Security Analyst</div><div class="jt">Cyber Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with your incident response experience and immediate availability. Westpac has structured early-career cyber pathways and your hands-on QRadar experience stands out against course-only applicants.</div></div></div><div class="co-detail-view" id="detail-sekuro"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Sekuro</h1><div class="co-sector">Cyber and Digital Resilience · Sydney</div><div class="numrow"><span class="pill">SOC + VAPT across 2 roles</span><span class="pill">CEH certified</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Security Analyst</div><div class="jt">Penetration Tester</div><div class="jt">SOC Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with your offensive testing tools, Burp Suite, Nessus, Metasploit, and the CEH. Their practice is strong on the offensive side and your OWASP web app testing work is a direct fit.</div></div></div><div class="co-detail-view" id="detail-telstrapurple"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Telstra Purple</h1><div class="co-sector">Enterprise Security Services · Sydney</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">Weekly VA on network infra</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Security Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Cyber Security Consultant</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with SIEM monitoring across QRadar, Splunk, and Azure Sentinel. Their security delivery arm runs monitoring roles that map directly onto your SOC day-to-day.</div></div></div><div class="co-detail-view" id="detail-datacom"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">Datacom</h1><div class="co-sector">IT Services · Security Practice · Sydney</div><div class="numrow"><span class="pill">SOC + VAPT across 2 roles</span><span class="pill">CEH + Splunk + 4 certs</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Security Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Information Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with your versatility across both SOC and VA. Services firms hire analysts who can flex across monitoring and assessment work, which is exactly what your two-role background offers.</div></div></div><div class="co-detail-view" id="detail-nccgroup"><div class="eb eb-t1">Tier 1 · Priority Target</div><h1 class="co-name">NCC Group</h1><div class="co-sector">Global Cyber Security Firm · Sydney</div><div class="numrow"><span class="pill">CEH certified</span><span class="pill">SOC + VAPT across 2 roles</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Security Consultant</div><div class="jt">Penetration Tester</div><div class="jt">Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--violet)"><div class="note-lbl" style="color:var(--violet)">How to approach</div><div class="note-body">Lead with CEH and your OWASP web application testing experience. Their offensive security practice is strong and your hands-on Burp Suite and Metasploit background is directly relevant.</div></div></div><div class="co-detail-view" id="detail-deloitte"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">Deloitte Cyber</h1><div class="co-sector">Big Four · Cyber Practice · Sydney</div><div class="numrow"><span class="pill">CEH + Splunk + 4 certs</span><span class="pill">Partner visa, no sponsorship</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Security Consultant</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">C</div><div class="tmpl-name">Template C</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Reach a peer consultant first, not the partner. Your certifications screen well at the CV stage and your no-sponsorship status removes a common blocker for their structured intake.</div></div></div><div class="co-detail-view" id="detail-accenture"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">Accenture Security</h1><div class="co-sector">Consulting · Cyber Practice · Sydney</div><div class="numrow"><span class="pill">SOC + VAPT across 2 roles</span><span class="pill">CEH certified</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cybersecurity Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Security Consultant</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">C</div><div class="tmpl-name">Template C</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Ask a peer consultant how they navigated the Australian market. Your dual SOC and VAPT background gives you more range than a single-track candidate, which consulting firms reward.</div></div></div><div class="co-detail-view" id="detail-optus"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">Optus</h1><div class="co-sector">Telco · In-house Cyber · Sydney HQ</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">Partner visa, no sponsorship</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Security Analyst</div><div class="jt">Security Operations Analyst</div><div class="jt">Information Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">B</div><div class="tmpl-name">Template B</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Lead with onshore availability and your network security engineering background. Optus has invested heavily in rebuilding its security function after 2022, so this is a motivated hiring team.</div></div></div><div class="co-detail-view" id="detail-anz"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">ANZ</h1><div class="co-sector">Banking · AI and Analytics · Sydney office</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">Partner visa, no sponsorship</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Security Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Information Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">B</div><div class="tmpl-name">Template B</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Lead with no sponsorship and immediate availability. ANZ has a growing applied security function in Sydney and onshore candidates with live SIEM experience are exactly what they need.</div></div></div><div class="co-detail-view" id="detail-baesystems"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">BAE Systems Digital Intelligence</h1><div class="co-sector">Defence and Cyber · Sydney</div><div class="numrow"><span class="pill">CEH + Splunk + 4 certs</span><span class="pill">Daily SIEM monitoring</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Security Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">A</div><div class="tmpl-name">Template A</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Lead with your certifications and threat intelligence experience. Defence-adjacent roles prioritise verifiable credentials and structured incident response experience over raw seniority.</div></div></div><div class="co-detail-view" id="detail-kpmg"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">KPMG Cyber</h1><div class="co-sector">Big Four · Cyber Practice · Sydney</div><div class="numrow"><span class="pill">SOC + VAPT across 2 roles</span><span class="pill">CEH certified</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Analyst</div><div class="jt">Penetration Tester</div><div class="jt">SOC Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">C</div><div class="tmpl-name">Template C</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Reach a peer analyst, not the partner. Ask how they position candidates with offshore SOC experience into the Australian market. Your VAPT background gives you a consulting angle most analysts lack.</div></div></div><div class="co-detail-view" id="detail-nab"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">NAB</h1><div class="co-sector">Banking · Enterprise Security · Sydney office</div><div class="numrow"><span class="pill">Daily SIEM monitoring</span><span class="pill">Partner visa, no sponsorship</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">Cyber Security Analyst</div><div class="jt">SOC Analyst</div><div class="jt">Information Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">B</div><div class="tmpl-name">Template B</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Lead with reliability and no sponsorship. In a regulated bank environment, an analyst who has run daily monitoring and weekly VA cadence consistently is a stronger hire than a senior candidate with patchy delivery.</div></div></div><div class="co-detail-view" id="detail-infosys"><div class="eb eb-t2">Tier 2 · Strong Target</div><h1 class="co-name">Infosys Cybersecurity</h1><div class="co-sector">IT Services · Security Practice · Sydney</div><div class="numrow"><span class="pill">CEH + Splunk + 4 certs</span><span class="pill">SOC + VAPT across 2 roles</span></div><div class="co-grid"><div class="co-col"><div class="col-lbl">Find on LinkedIn</div><div class="jt">SOC Analyst</div><div class="jt">Security Analyst</div><div class="jt">Cyber Security Analyst</div></div><div class="co-col tmpl-col"><div class="col-lbl">Use Template</div><div class="tmpl-letter">B</div><div class="tmpl-name">Template B</div></div></div><div class="note-card" style="border-top-color:var(--teal)"><div class="note-lbl" style="color:var(--teal)">How to approach</div><div class="note-body">Lead with certifications and your SIEM breadth across QRadar, Splunk, and Sentinel. Large IT services firms run multi-client SOC operations and value analysts who already know multiple platforms.</div></div></div></div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <div class="panel" id="panel-scripts">
+    <div class="sc-head">
+      <div class="sc-title">Approved <em>Scripts</em></div>
+      <div class="sc-sub">Connection note pinned above. Pick a template, tailor the bracketed line, copy and send.</div>
+      <div class="tmpl-choices"><div class="tmpl-choice active" onclick="switchTemplate('A', this)"><span class="tc-letter">A</span><span class="tc-name">Template A</span><span class="tc-who">SOC Manager or Security Lead at an MSSP or enterprise team</span></div><div class="tmpl-choice" onclick="switchTemplate('B', this)"><span class="tc-letter">B</span><span class="tc-name">Template B</span><span class="tc-who">IT Manager or CISO at a larger or regulated organisation</span></div><div class="tmpl-choice" onclick="switchTemplate('C', this)"><span class="tc-letter">C</span><span class="tc-name">Template C</span><span class="tc-who">Peer analyst, for a referral or market insight</span></div></div>
+    </div>
+    <div class="sc-body">
+      <div class="cn-strip">
+        <div class="cn-meta">
+          <div class="cn-lbl">Connection Note</div>
+          <div class="cn-char">280 / 280 chars</div>
+          <button class="copy-btn" id="cn-btn" style="margin-top:8px" onclick="copyEl('cn-text','cn-btn')">Copy</button>
+        </div>
+        <div class="cn-text" id="cn-text">Hi [First Name], Sydney-based SOC analyst here, CEH-certified with live QRadar and Splunk experience and hands-on VAPT work. I follow what the security team at [Company] does and wanted to connect directly rather than drop an application blind. Full work rights on a partner visa.</div>
+      </div>
+      <div class="tmpl-panel active" id="tmpl-panel-A"><div class="tp-head">Template A , SOC Manager or Security Lead at an MSSP or enterprise team</div><div class="tp-body" id="tp-body-A">Hi [First Name], I noticed [specific observation about their SOC or security team's work].
+
+Finding an analyst who has actually sat in a live SOC is harder than it sounds. Most CVs for entry-level roles come from people who have completed courses. Mine comes from running daily threat monitoring and incident response in IBM QRadar, investigating phishing and malware alerts end to end, and validating IOCs using VirusTotal and IBM X-Force.
+
+Alongside that I have hands-on VAPT experience using Nessus, Burp Suite, and Metasploit, which means I understand how vulnerabilities get exploited, not just how they get flagged. I hold a CEH plus Splunk and Fortinet NSE certifications.
+
+I'm in Sydney on a partner visa with full work rights, no sponsorship needed, and available immediately. If you're growing the team, I'd value a short conversation.</div><div class="tp-foot"><span class="wc">135 words</span><button class="copy-btn" id="tp-btn-A" onclick="copyEl('tp-body-A','tp-btn-A')">Copy</button></div></div><div class="tmpl-panel" id="tmpl-panel-B"><div class="tp-head">Template B , IT Manager or CISO at a larger or regulated organisation</div><div class="tp-body" id="tp-body-B">Hi [First Name], I'll keep this short.
+
+I'm a cybersecurity analyst based in Sydney with hands-on SOC and vulnerability assessment experience. I ran daily threat monitoring across client environments for almost two years, produced the incident reports the team relied on, and held a weekly vulnerability cadence on network infrastructure.
+
+What makes me straightforward to hire: I hold a CEH and Splunk certification, I'm in Sydney on a partner visa with full work rights, and I can start immediately. No sponsorship required.
+
+If you're building or maintaining a security function and need someone who can contribute from day one without a long ramp-up, I'd welcome a conversation about whether there's a fit.</div><div class="tp-foot"><span class="wc">112 words</span><button class="copy-btn" id="tp-btn-B" onclick="copyEl('tp-body-B','tp-btn-B')">Copy</button></div></div><div class="tmpl-panel" id="tmpl-panel-C"><div class="tp-head">Template C , Peer analyst, for a referral or market insight</div><div class="tp-body" id="tp-body-C">Hi [First Name], your path into cybersecurity in Australia stood out to me.
+
+I've come from a live SOC background, IBM QRadar monitoring, incident response, and VAPT work, and I've recently moved to Sydney on a partner visa. I'm now trying to understand how analysts with offshore SOC experience actually land roles in this market, beyond what the job ads say.
+
+If you're open to it, I'd value ten minutes to hear how you approached the transition and what you'd do differently. No agenda beyond learning from someone a few steps ahead.</div><div class="tp-foot"><span class="wc">92 words</span><button class="copy-btn" id="tp-btn-C" onclick="copyEl('tp-body-C','tp-btn-C')">Copy</button></div></div>
+    </div>
+  </div>
+
+  <!-- REPLIES -->
+  <div class="panel" id="panel-replies">
+    <div class="rp-scroll">
+      <div class="rp-title">Reply <em>Handling</em></div>
+      <div class="rp-sub">Three exchanges that decide whether a lead moves. Under 70 words each. Keep it in your voice.</div>
+      <div class="reply-card"><div class="rc-head"><span class="rc-n">01</span><span class="rc-sit">They ask for your resume or more information</span></div><div class="rc-body" id="rc-body-01">Thanks [First Name], sending the resume now. Quick summary while it lands: CEH-certified SOC analyst, two years of live QRadar monitoring and incident response at Creador Solutions, plus a VAPT role at Digital Age Strategies. Full work rights on a partner visa in Sydney, available immediately. Happy to walk through anything on a call. What works for your calendar this week?</div><div class="rc-foot"><span class="wc">61 words</span><button class="copy-btn" id="rc-btn-01" onclick="copyEl('rc-body-01','rc-btn-01')">Copy</button></div></div><div class="reply-card"><div class="rc-head"><span class="rc-n">02</span><span class="rc-sit">They say not right now</span></div><div class="rc-body" id="rc-body-02">Completely understand, [First Name]. I'll stay connected and keep an eye on what the team is doing. If something opens up on the SOC or security side later, I'd be glad to be an early conversation. Is it alright if I check back in a couple of months?</div><div class="rc-foot"><span class="wc">48 words</span><button class="copy-btn" id="rc-btn-02" onclick="copyEl('rc-body-02','rc-btn-02')">Copy</button></div></div><div class="reply-card"><div class="rc-head"><span class="rc-n">03</span><span class="rc-sit">Good exchange then silence for 7+ days</span></div><div class="rc-body" id="rc-body-03">Hi [First Name], following up on our last exchange. No pressure at all. I recently completed a short vulnerability assessment write-up I'd be happy to share if it's useful context. If the timing isn't right, just say the word and I'll circle back when it suits you better.</div><div class="rc-foot"><span class="wc">48 words</span><button class="copy-btn" id="rc-btn-03" onclick="copyEl('rc-body-03','rc-btn-03')">Copy</button></div></div>
+    </div>
+  </div>
+
+  <!-- WARM UP -->
+  <div class="panel" id="panel-warmup">
+    <div class="wu-inner">
+      <div class="wu-title">Warm <em>Up</em></div>
+      <div class="wu-sub">Two weeks of visible commenting before you send a single DM. Hiring managers recognise a name they have already seen.</div>
+      <div class="wu-grid">
+        <div class="wu-card">
+          <h3>What to comment on</h3>
+          <div class="ci"><span class="dot"></span>Australian threat intelligence alerts and breach news from ASD or ACSC advisories</div><div class="ci"><span class="dot"></span>SOC analysts and security engineers discussing QRadar, Splunk, or Sentinel tuning in practice</div><div class="ci"><span class="dot"></span>CEH, Splunk, or Fortinet certification holders sharing what helped them land roles in Australia</div><div class="ci"><span class="dot"></span>Sydney cybersecurity hiring managers posting about what they actually look for in junior analysts</div><div class="ci"><span class="dot"></span>VAPT practitioners sharing methodology insights from real assessments, OWASP or Burp Suite work</div>
+        </div>
+        <div class="wu-card">
+          <h3>How to find these posts</h3>
+          <div class="kw-row"><code id="kw-0">"SOC Analyst" Sydney</code><button class="kw-copy" onclick="copyKw(this, document.getElementById('kw-0').textContent)">Copy</button></div><div class="kw-row"><code id="kw-1">"QRadar" OR "Splunk" incident response</code><button class="kw-copy" onclick="copyKw(this, document.getElementById('kw-1').textContent)">Copy</button></div><div class="kw-row"><code id="kw-2">"CEH" cybersecurity Australia</code><button class="kw-copy" onclick="copyKw(this, document.getElementById('kw-2').textContent)">Copy</button></div><div class="kw-row"><code id="kw-3">"VAPT" penetration testing Sydney</code><button class="kw-copy" onclick="copyKw(this, document.getElementById('kw-3').textContent)">Copy</button></div><div class="kw-row"><code id="kw-4">"cybersecurity analyst" hiring Australia</code><button class="kw-copy" onclick="copyKw(this, document.getElementById('kw-4').textContent)">Copy</button></div>
+        </div>
+        <div class="wu-card span2">
+          <h3>Good vs weak comment</h3>
+          <div class="cmp">
+            <div class="cmp-col cmp-good"><span class="cmp-lbl">Sharp</span>The alert-to-escalation workflow you describe is exactly what separates a functioning SOC from an alert inbox. In QRadar I found that IOC validation through IBM X-Force before escalating cut noise significantly. Do you track your false positive rate per rule set, or manage it differently?</div>
+            <div class="cmp-col cmp-bad"><span class="cmp-lbl">Skip it</span>Great post! Cybersecurity is so important these days. Thanks for sharing your insights.</div>
+          </div>
+        </div>
+        <div class="wu-card span2">
+          <div class="ai-head">
+            <h3 style="margin:0">Your comment-writing prompt</h3>
+            <button class="copy-btn" id="ai-btn" onclick="copyEl('ai-prompt','ai-btn')">Copy</button>
+          </div>
+          <div class="ai-prompt" id="ai-prompt">You are helping Snehal Bole write a LinkedIn comment. Snehal is a CEH-certified SOC analyst now based in Sydney on a partner visa. She has two years of live IBM QRadar SIEM monitoring and incident response at a managed SOC, plus hands-on VAPT work using Nessus, Burp Suite, and Metasploit. Her voice is clear and practical. She thinks that most of the job is filtering noise, not chasing every alert, and that the skill is knowing which ones actually matter. Write a comment under 60 words responding to the post below. Add one specific technical insight drawn from her SOC or VAPT experience. No emoji, no flattery, no 'great post.' End with a direct question that invites a reply. Post: [paste the post here]</div>
+        </div>
       </div>
     </div>
-    <div class="cover-meta">
-      <div class="cover-score">GOAL: 80–90K IN 3 MONTHS</div><br>
-      Prepared · June 2026<br>Confidential<br>Ark Abroad
-    </div>
   </div>
-  <div class="cover-bar"></div>
-</div>
-
-<div class="container">
-
-<!-- 01 WHY COLD OUTREACH -->
-<div class="sec-label"><div class="sec-num">01</div><div class="sec-title">Why This Matters For You</div><div class="rule"></div></div>
-<h2 class="sec-heading">SEEK Is Not Enough On Its Own</h2>
-<p class="sec-sub">You've already applied through SEEK, company websites, recruiters and networking events. That's the right instinct — but most SOC and analyst roles never make it to a job board, or get 150+ applicants once they do. Cold outreach puts you in front of the hiring manager before the queue forms.</p>
-<div class="two-col">
-  <div class="card card-accent">
-    <h4 class="mini">Your real constraint</h4>
-    <p style="font-size:13px;color:var(--ink2);line-height:1.7;">You're working shift hours with no fixed days, and have roughly 7–10 hours a week for the job search. That means every hour needs to go toward the highest-leverage activity — and direct outreach to the person who actually hires converts far better per hour than scrolling job boards.</p>
-  </div>
-  <div class="card card-accent">
-    <h4 class="mini">Your real edge</h4>
-    <p style="font-size:13px;color:var(--ink2);line-height:1.7;">You're not a graduate hoping for a first chance. You've run live SOC monitoring in IBM QRadar and delivered VAPT engagements. That's a genuine, differentiated background — cold outreach lets you say that directly to a decision-maker instead of hoping a keyword filter notices it.</p>
-  </div>
-</div>
-<div class="callout amber">
-  <div class="callout-label">The Blocker You Named</div>
-  You told us your biggest blocker is "not enough local experience." Cold outreach is how you neutralise that — a direct message that leads with your CEH, your live SOC work and your full work rights removes the local-experience question before it's asked.
-</div>
-
-<!-- 02 THE NUMBERS -->
-<div class="sec-label"><div class="sec-num">02</div><div class="sec-title">Your Weekly Targets</div><div class="rule"></div></div>
-<h2 class="sec-heading">The Volume That Actually Moves The Needle</h2>
-<p class="sec-sub">Outreach only works with consistent volume. These are the numbers to hit every week — they fit inside your 7–10 hour budget if you batch them.</p>
-<div class="three-col">
-  <div class="card-sm card-accent">
-    <div class="stat-row"><span class="stat-num">15–20</span></div>
-    <div class="stat-label">Targeted applications per week — SEEK, LinkedIn Jobs and direct company sites combined</div>
-  </div>
-  <div class="card-sm card-accent">
-    <div class="stat-row"><span class="stat-num">3–5</span></div>
-    <div class="stat-label">Direct LinkedIn connection requests to hiring managers or SOC leads for every application you submit</div>
-  </div>
-  <div class="card-sm card-accent">
-    <div class="stat-row"><span class="stat-num">2</span></div>
-    <div class="stat-label">Cold emails per week to security leads at target companies, outside of any live job ad</div>
-  </div>
-</div>
-<div class="callout">
-  <div class="callout-label">How To Fit This Into Shift Work</div>
-  Batch it around your Wednesdays and any recurring days off. One 90-minute block for applications and connection requests, one 30-minute block for follow-ups on messages already sent. Outreach doesn't need to happen daily — it needs to happen on a schedule you can actually keep.
-</div>
-
-<!-- 03 TARGET LIST -->
-<div class="sec-label"><div class="sec-num">03</div><div class="sec-title">Who To Contact</div><div class="rule"></div></div>
-<h2 class="sec-heading">Employers &amp; The Person To Reach At Each</h2>
-<p class="sec-sub">Real, operating security employers hiring in Sydney. Go to the person who owns the hiring decision — SOC Manager, Security Operations Lead, or Talent Acquisition for Cyber — never a generic HR inbox.</p>
-
-<div class="company-card"><div class="company-name">CyberCX</div><div class="company-type">MSSP · Largest AU Cyber Firm</div><div class="company-roles"><span class="role-tag">SOC Analyst</span><span class="role-tag">Security Analyst</span></div><div class="company-why"><strong>Reach:</strong> SOC Manager, Cyber Talent Acquisition. Runs large managed SOCs on QRadar/Splunk — a direct match for your SIEM background.</div></div>
-
-<div class="company-card"><div class="company-name">Tesserent (a Thales company)</div><div class="company-type">Cyber Security Services</div><div class="company-roles"><span class="role-tag">SOC Analyst</span><span class="role-tag">VAPT Consultant</span></div><div class="company-why"><strong>Reach:</strong> SOC Lead, Penetration Testing Manager. SOC and offensive security under one roof — matches your dual SOC + VAPT profile exactly.</div></div>
-
-<div class="company-card"><div class="company-name">Sekuro</div><div class="company-type">Cyber &amp; Digital Resilience Consultancy</div><div class="company-roles"><span class="role-tag">Security Analyst</span><span class="role-tag">Penetration Tester</span></div><div class="company-why"><strong>Reach:</strong> Practice Lead, Talent Partner. Strong offensive/VAPT practice — your CEH and Burp Suite work is directly relevant.</div></div>
-
-<div class="company-card"><div class="company-name">Commonwealth Bank (CBA)</div><div class="company-type">In-House Cyber / SOC</div><div class="company-roles"><span class="role-tag">Cyber Security Analyst</span><span class="role-tag">SOC Analyst</span></div><div class="company-why"><strong>Reach:</strong> Cyber Security Hiring Manager. 24/7 in-house SOC on Splunk/Sentinel — onshore, full-work-rights candidates are exactly who they hire.</div></div>
-
-<div class="company-card"><div class="company-name">Westpac</div><div class="company-type">In-House Security Operations</div><div class="company-roles"><span class="role-tag">Security Operations Analyst</span></div><div class="company-why"><strong>Reach:</strong> SecOps Manager. Established early-career cyber pathways; your hands-on QRadar experience stands out against course-only applicants.</div></div>
-
-<div class="company-card"><div class="company-name">Macquarie Telecom Group</div><div class="company-type">Managed Security Services</div><div class="company-roles"><span class="role-tag">SOC Analyst</span></div><div class="company-why"><strong>Reach:</strong> SOC Team Lead. Growing managed SOC with entry-to-mid analyst hiring — a realistic, well-matched target.</div></div>
-
-<div class="company-card"><div class="company-name">Datacom</div><div class="company-type">IT Services · Security Practice</div><div class="company-roles"><span class="role-tag">Security Analyst</span><span class="role-tag">SOC Analyst</span></div><div class="company-why"><strong>Reach:</strong> Security Practice Manager. Hires analysts across experience levels — your SOC + VA versatility is an asset here.</div></div>
-
-<div class="company-card"><div class="company-name">NCC Group</div><div class="company-type">Global Cyber Security Firm</div><div class="company-roles"><span class="role-tag">Security Consultant</span><span class="role-tag">Penetration Tester</span></div><div class="company-why"><strong>Reach:</strong> Consulting Manager. Strong testing practice — your CEH and OWASP web app testing fit the offensive side directly.</div></div>
-
-<div class="company-card"><div class="company-name">Deloitte Cyber</div><div class="company-type">Big Four · Cyber Practice</div><div class="company-roles"><span class="role-tag">Cyber Analyst</span><span class="role-tag">SOC Analyst</span></div><div class="company-why"><strong>Reach:</strong> Cyber Talent Acquisition. Structured early-career intake; your certifications screen well at the CV stage.</div></div>
-
-<div class="company-card"><div class="company-name">Telstra Purple</div><div class="company-type">Enterprise Security Services</div><div class="company-roles"><span class="role-tag">Security Analyst</span></div><div class="company-why"><strong>Reach:</strong> Security Delivery Manager. Large SIEM and monitoring team that maps onto your day-to-day SOC experience.</div></div>
-
-<!-- 04 EMAIL TEMPLATES -->
-<div class="sec-label"><div class="sec-num">04</div><div class="sec-title">Cold Email Templates</div><div class="rule"></div></div>
-<h2 class="sec-heading">Straight To The Hiring Manager's Inbox</h2>
-<p class="sec-sub">Use these outside of any live job ad. Find the security lead's email using the pattern firstname.lastname@company.com.au (verify with a tool like Hunter, or ask via LinkedIn first) or send via LinkedIn InMail if no email is available.</p>
-
-<div class="copy-block"><span class="copy-block-label">Template 1 — General SOC/Security Lead</span>
-<p><strong>Subject:</strong> SOC Analyst (CEH) — Sydney, available now, full work rights</p>
-<p>Hi [Name],</p>
-<p>I'm a SOC analyst based in Sydney and wanted to reach out directly rather than wait for a role to be advertised.</p>
-<p>I've spent the last few years running live SOC monitoring and incident response in IBM QRadar — investigating phishing and malware, correlating events, and validating indicators of compromise through VirusTotal and IBM X-Force. I've also worked as a VAPT auditor, running vulnerability assessments and penetration tests with Nessus, Burp Suite and Metasploit. I'm CEH-certified, with an Electronics &amp; Communication engineering background behind the networking side of the work.</p>
-<p>I'm on a partner visa with full working rights in Australia — no sponsorship required — and available to start immediately.</p>
-<p>If [Company] has SOC or security analyst capacity opening up, even informally, I'd welcome a short conversation. Happy to send my resume through.</p>
-<p>Thanks for your time,<br>Snehal Bole<br>0432 982 108 · snehalsbole@outlook.com · linkedin.com/in/snehalbole</p>
-</div>
-
-<div class="copy-block"><span class="copy-block-label">Template 2 — VAPT / Offensive Security Angle</span>
-<p><strong>Subject:</strong> CEH-certified analyst — SOC + VAPT background, Sydney</p>
-<p>Hi [Name],</p>
-<p>I noticed [Company]'s security testing work and wanted to introduce myself directly.</p>
-<p>I've worked on both sides of security — as a Security Analyst running live SOC monitoring in IBM QRadar, and as a VAPT Auditor delivering vulnerability assessments and penetration testing with Nessus, Nmap, Burp Suite, Metasploit and Kali Linux, applying OWASP methodology to web application testing. That combination means I understand both how attacks get detected and how the vulnerabilities behind them get found and fixed.</p>
-<p>I'm CEH-certified, based in Sydney with full work rights (no sponsorship required), and available now.</p>
-<p>Would you be open to a short call if anything comes up on your team? I'd value the chance to talk even ahead of an open role.</p>
-<p>Best,<br>Snehal Bole<br>0432 982 108 · snehalsbole@outlook.com</p>
-</div>
-
-<div class="copy-block"><span class="copy-block-label">Template 3 — Short Follow-Up (No Reply After 5–7 Days)</span>
-<p><strong>Subject:</strong> Re: SOC Analyst (CEH) — Sydney</p>
-<p>Hi [Name],</p>
-<p>Following up briefly in case my last note got buried. I'm still very interested in SOC or security analyst opportunities at [Company], and remain available to start immediately with full working rights in Sydney.</p>
-<p>If it's easier, happy to send my resume and CEH certificate through now so you have them on file for when something opens.</p>
-<p>Thanks again,<br>Snehal Bole</p>
-</div>
-
-<!-- 05 LINKEDIN DMs -->
-<div class="sec-label"><div class="sec-num">05</div><div class="sec-title">LinkedIn Direct Messages</div><div class="rule"></div></div>
-<h2 class="sec-heading">After They Accept — What To Actually Say</h2>
-<p class="sec-sub">Your connection note (in the LinkedIn Playbook) gets you accepted. This is the message you send once they do — give it 1–2 days after acceptance.</p>
-
-<div class="copy-block"><span class="copy-block-label">First Message After Connection Accepted</span>
-<p>Hi [Name], thanks for connecting. I'm a SOC analyst based in Sydney — CEH-certified, with live SIEM experience in IBM QRadar and vulnerability assessment work using Nessus and Burp Suite. I'm currently exploring SOC and security analyst opportunities and wanted to introduce myself directly rather than only apply cold. I have full working rights here, no sponsorship needed. If anything opens up on your team, I'd love to be considered — happy to send my resume over.</p>
-</div>
-
-<div class="copy-block"><span class="copy-block-label">If They Reply Positively But No Role Is Open</span>
-<p>Really appreciate you taking the time to reply. Totally understand if nothing's open right now — would it be alright if I checked back in a few weeks? In the meantime, is there anyone else on your team, or elsewhere at [Company], you'd suggest I reach out to?</p>
-</div>
-
-<div class="copy-block"><span class="copy-block-label">If They Don't Reply Within a Week</span>
-<p>Hi [Name], just circling back in case this got lost in your inbox. Still keen to connect about SOC/security analyst opportunities at [Company] if anything's come up. No pressure at all if the timing isn't right — appreciate you connecting either way.</p>
-</div>
-
-<!-- 06 RECRUITER OUTREACH -->
-<div class="sec-label"><div class="sec-num">06</div><div class="sec-title">Specialist Recruiter Outreach</div><div class="rule"></div></div>
-<h2 class="sec-heading">Cybersecurity Recruitment Agencies To Register With</h2>
-<p class="sec-sub">These agencies specialise in cyber security placements across Sydney and have direct relationships with the employers above. Register your resume with each and send the message below.</p>
-
-<div class="two-col">
-  <div class="card-sm card-accent"><div class="field-value">Halcyon Knights</div><div class="field-sub">Specialist cyber security recruiter, Sydney/AU/NZ</div></div>
-  <div class="card-sm card-accent"><div class="field-value">e2 Cyber</div><div class="field-sub">Dedicated cyber recruitment, entry-to-senior roles</div></div>
-  <div class="card-sm card-accent"><div class="field-value">The Decipher Bureau</div><div class="field-sub">Cyber security recruitment, Sydney office</div></div>
-  <div class="card-sm card-accent"><div class="field-value">Clicks IT Recruitment</div><div class="field-sub">Cyber &amp; security practice, large employer network</div></div>
-  <div class="card-sm card-accent"><div class="field-value">Redwolf + Rosch</div><div class="field-sub">Cyber security staffing, Sydney &amp; Melbourne</div></div>
-  <div class="card-sm card-accent"><div class="field-value">Hays Cyber Security</div><div class="field-sub">Large generalist with a dedicated cyber vertical</div></div>
-</div>
-
-<div class="copy-block"><span class="copy-block-label">Message To Send Each Recruiter</span>
-<p>Hi [Name], I'm a SOC analyst based in Sydney looking for my next role — CEH-certified, with live SOC monitoring experience in IBM QRadar and vulnerability assessment/VAPT experience using Nessus, Burp Suite and Metasploit. I'm on a partner visa with full working rights, no sponsorship required, and available to start immediately. I'd love to be considered for any SOC Analyst, Security Analyst or Junior Penetration Tester roles you're currently working on. My resume is attached — happy to jump on a call whenever suits.</p>
-</div>
-
-<!-- 07 OBJECTION HANDLING -->
-<div class="sec-label"><div class="sec-num">07</div><div class="sec-title">Objection Handling</div><div class="rule"></div></div>
-<h2 class="sec-heading">What To Say When They Push Back</h2>
-<p class="sec-sub">These are the two objections you're most likely to hit. Have the response ready before the conversation happens.</p>
-<div class="two-col">
-  <div class="card card-amber">
-    <h4 class="mini">"We're looking for someone with local experience."</h4>
-    <p style="font-size:13px;color:var(--ink2);line-height:1.7;">"I understand — what I'd point to is that the tools and workflows are the same wherever they're run. I was working IBM QRadar, correlating alerts and escalating confirmed threats in a live SOC for over a year, and running VAPT engagements with Nessus and Burp Suite for another six months. The alert triage and vulnerability assessment process doesn't change by country — and I'm already living in Sydney, available now, with no visa barrier to starting."</p>
-  </div>
-  <div class="card card-amber">
-    <h4 class="mini">"Do you need sponsorship?"</h4>
-    <p style="font-size:13px;color:var(--ink2);line-height:1.7;">"No — I'm on a partner visa with full working rights in Australia, so there's no sponsorship required and no visa timeline to plan around. I can start as soon as you need me to."</p>
-  </div>
-</div>
-
-<!-- 08 CHECKLIST -->
-<div class="sec-label"><div class="sec-num">08</div><div class="sec-title">Weekly Execution Checklist</div><div class="rule"></div></div>
-<h2 class="sec-heading">One Repeatable Weekly Cycle</h2>
-<p class="sec-sub">Run this every week — it's designed to fit inside 7–10 hours around shift work.</p>
-<div class="card">
-  <ul class="checklist">
-    <li><span class="check-box"></span>Apply to 15–20 relevant roles (SEEK, LinkedIn Jobs, company sites)</li>
-    <li><span class="check-box"></span>Send 3–5 LinkedIn connection requests per application to the hiring manager or SOC/security lead</li>
-    <li><span class="check-box"></span>Send 2 cold emails to security leads at companies with no live ad open (Section 04)</li>
-    <li><span class="check-box"></span>Send first-message follow-ups to anyone who accepted a connection 1–2 days ago (Section 05)</li>
-    <li><span class="check-box"></span>Follow up on any email or message with no reply after 5–7 days</li>
-    <li><span class="check-box"></span>Register with one new specialist recruiter this week if not already done (Section 06)</li>
-    <li><span class="check-box"></span>Log every contact — name, company, date, response — so nothing gets chased twice or forgotten</li>
-  </ul>
-</div>
-<div class="callout green">
-  <div class="callout-label">Expected Outcome</div>
-  Run this cycle consistently and you're no longer waiting on SEEK's algorithm — you're in direct contact with the people who make hiring decisions, every single week. Combined with your LinkedIn rebuild, this is what turns "not enough local experience" from an objection into a non-issue.
-</div>
 
 </div>
 
-<div class="footer">
-  ARK ABROAD · SNEHAL BOLE · COLD OUTREACH PLAYBOOK · CONFIDENTIAL<br>
-  <span style="margin-top:6px;display:block;">Built by Ark Abroad · arkabroad.xyz</span>
-</div>
-
+<script>
+function switchTab(tab,el){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('panel-'+tab).classList.add('active');
+}
+function showCompany(slug){
+  document.querySelectorAll('.co-detail-view').forEach(v=>v.classList.remove('active'));
+  document.querySelectorAll('.sidebar-item,.sidebar-featured').forEach(i=>i.classList.remove('active'));
+  document.getElementById('detail-'+slug).classList.add('active');
+  document.getElementById('sb-'+slug).classList.add('active');
+  document.getElementById('co-detail').scrollTop=0;
+}
+function switchTemplate(id,el){
+  document.querySelectorAll('.tmpl-choice').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tmpl-panel').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('tmpl-panel-'+id).classList.add('active');
+}
+function copyEl(bodyId,btnId){
+  const text=document.getElementById(bodyId).textContent.trim();
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=document.getElementById(btnId);
+    const orig=btn.textContent;
+    btn.textContent='Copied';
+    btn.classList.add('copied');
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('copied');},2000);
+  });
+}
+function copyKw(el,text){
+  navigator.clipboard.writeText(text);
+  const orig=el.textContent;
+  el.textContent='Done';
+  setTimeout(()=>{el.textContent=orig;},1500);
+}
+</script>
 </body>
 </html>
